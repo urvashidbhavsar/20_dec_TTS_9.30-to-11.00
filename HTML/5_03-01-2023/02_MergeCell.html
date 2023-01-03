@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        for merge a cell used rowspan and colspan attribute
+        this both attribute used in <td> tag and <th> tag
+
+        when we used rowspan remove one column from next row
+        when we used colspan remove one column on that particular row.
+
+        <caption> tag used to give heading on table 
+        <tbody> -> table body -> not complusary
+     -->
+    <table border="1">
+      <caption>
+        <i>A test table with merge cell</i>
+      </caption>
+      <tbody>
+        <tr>
+          <th rowspan="2"></th>
+          <th colspan="2">Avarage</th>
+          <th rowspan="2">Red Eyes</th>
+        </tr>
+        <tr>
+          <th>Height</th>
+          <th>Weight</th>
+        </tr>
+        <tr>
+          <th>Male</th>
+          <td>1.9</td>
+          <td>0.003</td>
+          <td>40%</td>
+        </tr>
+        <tr>
+          <th>Female</th>
+          <td>1.8</td>
+          <td>0.002</td>
+          <td>43%</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- for create table used table tag 
+    table is a collection of row and column
+    cell -> it is a created with row and column combination i.e. box
+    row -> <tr> (table row) tag
+    column -> <td> (table data) tag
+    <th> (table heading) -> it is create a column with bold heading
+
+        border attribute dropped from HTML5 version
+        cellpadding -> give space between border and content
+        cellspacing -> give space between cells border and table border
+
+        style ->
+        background-color = apply color in background
+        border-color = apply color in border
+        color = apply color on text
+        text-align = center, right, left, justify
+        height = %, px
+        width = %, px
+
+    -->
+    <table
+      border="1"
+      cellpadding="10px"
+      cellspacing="10px"
+      rules="all"
+      style="
+        background-color: rgb(154, 123, 232);
+        border-color: red;
+        color: white;
+        width: 50%;
+        height: 300px;
+      "
+    >
+      <tr>
+        <th>Sr.no</th>
+        <th>Roll no</th>
+        <th>Name</th>
+        <th>Team</th>
+      </tr>
+      <tr style="text-align: center">
+        <th>1</th>
+        <td>1001</td>
+        <td>ABC</td>
+        <td>Red</td>
+      </tr>
+      <tr style="text-align: center">
+        <th>2</th>
+        <td>1002</td>
+        <td>XYZ</td>
+        <td>Green</td>
+      </tr>
+      <tr style="text-align: center">
+        <th>3</th>
+        <td>1003</td>
+        <td>ABC</td>
+        <td>Blue</td>
+      </tr>
+    </table>
+  </body>
+</html>
