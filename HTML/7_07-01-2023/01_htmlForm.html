@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- in name attrubute give the name of form 
+        method -> 2 type -> (1) get (2) post
+        
+        get -> it pass whole form information in URL. it has limitation.
+
+        post -> it is secure. send form whole information to next page.
+
+        action => page name. after button clicking it forwarded next page.
+    -->
+    <form action="#" method="get" name="form1">
+      <label for="">Name</label>
+      <!-- readonly -->
+      <input type="text" id="" name="" placeholder="Enter Name" required />
+      <br /><br />
+
+      <!-- radio button used to one option selection from multiple options
+        give name complusary
+    -->
+      <label for="">Gender</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">Male</label>
+      <input type="radio" name="gender" id="" />
+      <label for="">Female</label>
+      <br /><br />
+
+      <!-- date it is upgrade in HTML5 -->
+      <label for="">Date of Birth</label>
+      <input type="date" name="" id="" />
+      <br /><br />
+
+      <!-- checkbox used to select multiple option -->
+      <label for="">Qualification</label>
+      <input type="checkbox" name="c1" /> 10th
+      <input type="checkbox" name="c2" />12th
+      <input type="checkbox" name="c3" />B.
+      <input type="checkbox" name="c4" />M. <br /><br />
+
+      <!-- dropdown list <select> <option> -->
+      <label for="">Experiance</label>
+      <select name="" id="">
+        <option value="">---select---</option>
+        <option value="">0</option>
+        <option value="">&lt;1</option>
+        <option value="">&gt;1</option>
+      </select>
+      <br /><br />
+
+      <!-- textarea -> used to add feedback, address, long descrition -->
+      <label for="">Address</label>
+      <textarea name="" id="" rows="3" cols="30"></textarea>
+      <br /><br />
+      <input type="submit" name="" value="Register" />
+      <input type="reset" name="" value="Clear" />
+      <input type="button" name="" value="Button" />
+      <button type="">Button Tag</button>
+    </form>
+  </body>
+</html>
