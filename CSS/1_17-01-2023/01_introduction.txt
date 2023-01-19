@@ -1,0 +1,29 @@
+what is CSS??
+-> cascasding style sheet.
+which is provide you designing in webpage.
+make responsive. => css3
+flexible component. => css3
+
+how to way to create CSS / how many types ->
+(1) inline
+    => using style attribute
+(2) internal
+    => using <style> tag in <head> section
+(3) external
+    => create an external file using .css extension and link with <link> tag.
+
+syntax : (internal / external)
+
+selector { 
+    property : value; 
+}
+
+(inline)
+style = "property : value;"
+
+How many type of selectors ->
+(1) element selector
+(2) class selector
+(3) id selector
+(4) universal (global) selector
+(5) group selector
