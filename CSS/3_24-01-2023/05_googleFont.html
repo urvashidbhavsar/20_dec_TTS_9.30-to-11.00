@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google font cdn -->
+    <!-- if we use more than 2 font to saparate it used | (pipe symbol) 
+        if there is space between font name to join use % (per symbol)
+
+        copy from :
+        (1) https://developers.google.com/fonts/docs/getting_started
+        (2) https://fonts.google.com/knowledge/using_type/using_web_fonts
+    -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine|Ink%Free"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+      .head1 {
+        /* default family which is given in css property */
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .head2 {
+        font-family: Tangerine;
+      }
+      .head3 {
+        font-family: Ink Free;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello world</h1>
+    <h1 class="head1">Hello world</h1>
+    <h1 class="head2">Hello world</h1>
+    <h1 class="head3">Hello world</h1>
+  </body>
+</html>
