@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* used with :: symbol */
+      div {
+        height: auto;
+        width: 250px;
+        border: 2px solid black;
+        padding: 20px;
+        margin: auto;
+      }
+      div::first-letter {
+        font-size: 50px;
+      }
+      div::first-line {
+        color: blue;
+      }
+      div::after {
+        content: "";
+      }
+      div::before {
+        content: "";
+      }
+      div::selection {
+        color: white;
+        background-color: blue;
+      }
+      li::marker {
+        /* used with only <ul> and <ol> */
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- pseudo element
+     -->
+
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ut.
+      Inventore pariatur ex non quam iusto maiores odit voluptatem sit tenetur
+      consequatur? Incidunt dignissimos consequatur molestiae corrupti
+      doloremque porro doloribus!
+    </div>
+
+    <ul>
+      <li>HOME</li>
+      <li>SERVICES</li>
+    </ul>
+  </body>
+</html>
