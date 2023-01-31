@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img1 {
+        height: 400px;
+        width: 450px;
+
+        /* filter: blur(10px); -> set blurness of image*/
+        /* filter: brightness(80%); -> set value in %. 0 is black */
+        /* filter: contrast(50%); -> set value in %. 0 is gray */
+        /* filter: drop-shadow(5px 5px 5px red); */
+        /* filter: grayscale(40%); -> set black n white on 100% */
+        /* filter: hue-rotate(40deg); -> show diff colors on image */
+        /* filter: invert(40%);  
+         -> 0 to 50% -> normal to gray effect after 50% to 100% set as negative roll */
+
+        /* filter: opacity(40%); */
+        /* filter: saturate(50%); -> show black n white on 0% */
+        filter: sepia(50%);
+        /* set yellow color effect on 100% */
+      }
+      .img2 {
+        height: 400px;
+        width: 450px;
+        filter: drop-shadow(5px 5px 5px red);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="images/wallpaper.jpg" alt="" class="img1" />
+      <!-- <img src="images/border-img1.png" alt="" class="img2" /> -->
+    </div>
+  </body>
+</html>
