@@ -1,0 +1,29 @@
+property : display
+
+display : inline
+display : inline-block
+display : block
+display : flex
+display : grid
+
+
+display : flex 
+following property are used with display flex.
+(1) justify-content
+(2) align-items
+(3) gap (row-gap, column-gap)
+(4) flex (flex-grow, flex-shrink, flex-basis)
+(5) flex-grow
+(6) flex-shrink
+(7) flex-basis
+(8) flex-direction
+(9) flex-wrap
+
+display : grid
+following property used with display grid
+(1) justify-items
+(2) align-content
+(3) gap (row-gap, column-gap)
+(4) grid-template-columns
+(5) grid-template-rows
+(6) place-content
