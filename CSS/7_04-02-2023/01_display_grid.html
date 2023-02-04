@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .sub-child {
+        height: 100px;
+        width: 100px;
+        background-color: darkgoldenrod;
+      }
+      .main {
+        display: grid;
+        /* grid-template-columns: auto auto auto auto auto; */
+        /* 1fr => 1 fraction */
+        /* grid-template-columns: 1fr 2fr 3fr 1fr 1fr; */
+        grid-template-columns: repeat(5, 1fr);
+        gap: 20px;
+        justify-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+      <div class="sub">
+        <div class="sub-child"></div>
+      </div>
+    </div>
+  </body>
+</html>
