@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  background-color: rgb(19, 19, 33);
+}
+.container {
+  margin: 0px 50px;
+}
+header .header-p {
+  padding: 20px;
+}
+header .header-nav {
+  display: flex;
+  align-items: center;
+}
+header .header-nav .logo {
+  padding: 20px;
+  flex: 1;
+}
+header .header-nav .logo a {
+  color: white;
+  text-transform: uppercase;
+}
+header .header-nav .navi {
+  padding: 20px;
+  flex: 3;
+}
+header .header-nav .navi ul {
+  display: flex;
+  justify-content: flex-start;
+}
+header .header-nav .navi ul li {
+  padding: 10px;
+}
+header .header-nav .navi ul li a {
+  color: white;
+}
+header .header-nav .navi ul li span {
+  color: white;
+}
+header .header-nav .search {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header .header-nav .search button {
+  height: 40px;
+  width: 120px;
+  background-color: brown;
+  color: white;
+  border: none;
+  font-weight: 700;
+}
+header .header-nav .search .moon {
+  color: white;
+  font-size: 25px;
+}
