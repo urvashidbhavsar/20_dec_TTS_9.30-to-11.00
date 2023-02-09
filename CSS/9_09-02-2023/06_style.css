@@ -1,0 +1,125 @@
+body {
+  background-image: linear-gradient(rgb(35, 35, 250), rgb(16, 16, 164));
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+.main {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  justify-items: center;
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+  transition: 1s all ease;
+}
+
+.btn1:hover {
+  transform: rotateX(180deg);
+}
+
+.btn2:hover {
+  transform: rotateY(180deg);
+}
+
+.btn3:hover {
+  transform: rotate(360deg);
+}
+
+.btn4:hover {
+  transform: skew(20deg);
+}
+
+.btn5:hover {
+  transform: skewY(10deg);
+}
+
+.btn6:hover {
+  transform: scale(0.8);
+}
+
+.btn7:hover {
+  transform: scale(1.2);
+}
+
+.btn8:hover {
+  transform: translateX(10px);
+}
+
+.btn9:hover {
+  transform: translateY(10px);
+}
+
+.btn10:hover {
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+}
+
+.btn11:hover {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+}
+.btn12 {
+  border-radius: 10px;
+}
+.btn12:hover {
+  border: 5px ridge red;
+  border-radius: 0;
+}
+.link1::before {
+  content: "";
+}
+.link1::after {
+  content: "";
+  height: 3px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transition: 1s all ease;
+  transform: scaleX(0);
+}
+.link1:hover::after {
+  transform: scaleX(1);
+}
+.link2::before {
+  content: "";
+}
+.link2::after {
+  content: "";
+  height: 3px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transition: 1s all ease;
+  transform: scaleY(0);
+}
+.link2:hover::after {
+  transform: scaleY(1);
+}
+
+.link3::before {
+  content: "";
+}
+.link3::after {
+  content: "";
+  height: 3px;
+  width: 130px;
+  background-color: red;
+  display: block;
+  transition: 1s all ease;
+  /* transform-origin: 0% 100%; => left to right */
+  transform-origin: 100% 0%;
+  transform: scaleX(0);
+}
+.link3:hover::after {
+  transform: scaleX(1);
+}
