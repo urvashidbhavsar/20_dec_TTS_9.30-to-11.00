@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .list ul {
+            background-color: lightcoral;
+        }
+
+        .list ul li {
+            background-color: lightseagreen;
+            padding: 20px;
+            display: inline-block;
+        }
+
+        .show-menu {
+            position: relative;
+        }
+
+        .show-menu span {
+            color: white;
+            transition: .5s ease all;
+        }
+
+        .show-menu:hover span {
+            transform: rotateX(180deg);
+        }
+
+        .show-menu .outer-menu {
+            display: none;
+            position: absolute;
+            top: 46px;
+            left: 0;
+            width: 100px;
+        }
+
+        .show-menu .outer-menu li {
+            background-color: brown;
+            padding: 10px 20px;
+        }
+
+        .show-menu:hover .outer-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="list">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li class="show-menu"><a href="">Service</a>
+                <span class="fa-solid fa-angle-down"></span>
+                <ul class="outer-menu">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 2</a></li>
+                </ul>
+            </li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
