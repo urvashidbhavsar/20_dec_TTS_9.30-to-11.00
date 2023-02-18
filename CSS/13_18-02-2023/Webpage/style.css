@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* common css which is used in full page */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 80px;
+}
+/* ================= header ==================== */
+header{
+    background-color: brown;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .navigations{
+    display: flex;
+    align-items: center;
+}
+header .navigations .logo{
+    flex: 0.5;
+}
+header .navigations .logo a{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+header .navigations .logo a span{
+    color: #ce6d06;
+}
+header .navigations .nav{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navigations .nav ul{
+    display: flex;
+    gap: 20px;
+}
+header .navigations .nav ul a{
+    color: white;
+    font-weight: 500;
+}
+header .navigations .nav ul span{
+    color: white;
+}
+header .navigations .nav .search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .navigations .nav .search span{
+    font-size: 22px;
+    color: white;
+}
+header .navigations .nav .search button{
+    height: 40px;
+    width: 120px;
+    background-color: #ce6d06;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 40px;
+}
+header .navigations .theme{
+    padding: 0px 10px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+header .navigations .theme span{
+    font-size: 22px;
+    color: white;
+}
+header .navigations .theme button{
+    display: none;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+}

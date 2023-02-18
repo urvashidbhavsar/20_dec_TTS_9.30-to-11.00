@@ -1,0 +1,15 @@
+@media (min-width:576px) {
+    .container{
+        margin: 0px 30px;
+    }
+    /* ================= header ==================== */
+    header .navigations .logo{
+        flex: 1;
+    }
+    header .navigations .nav{
+    display: none;
+    }
+    header .navigations .theme button{
+        display: block;
+    }
+}
