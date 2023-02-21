@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* common css which is used in full page */
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 80px;
+}
+/* ================= header ==================== */
+header{
+    background-color: brown;
+    position: fixed;
+    z-index: 2222;
+    width: 100%;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .navigations{
+    display: flex;
+    align-items: center;
+}
+header .navigations .logo{
+    flex: 0.5;
+}
+header .navigations .logo a{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+header .navigations .logo a span{
+    color: #ce6d06;
+}
+header .navigations .nav{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+header .navigations .nav ul{
+    display: flex;
+    gap: 20px;
+}
+header .navigations .nav ul a{
+    color: white;
+    font-weight: 500;
+}
+header .navigations .nav ul span{
+    color: white;
+}
+header .navigations .nav .search{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+header .navigations .nav .search span{
+    font-size: 22px;
+    color: white;
+}
+header .navigations .nav .search button{
+    height: 40px;
+    width: 120px;
+    background-color: #ce6d06;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 40px;
+}
+header .navigations .theme{
+    padding: 0px 10px;
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+header .navigations .theme span{
+    font-size: 22px;
+    color: white;
+}
+header .navigations .theme button{
+    display: none;
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+}
+/* ============== HomeImage =============== */
+.HomeImage{
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+.HomeImage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.533) ;
+    z-index: -1;
+}
+.HomeImage .Home-p{
+    padding: 200px 0px;
+}
+.HomeImage .HomeText{
+    color: white;
+}
+.HomeImage .HomeText h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.HomeImage .HomeText p{
+    width: 50%;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+.HomeImage .HomeText button{
+    height: 50px;
+    width: 150px;
+    background-color: #ce6d06;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    transition: 1s all ease;
+}
+.HomeImage .HomeText button:hover{
+    background-color: #5e3203;
+}
+/* ==================== best coffee for you =============== */
+.best-coff-se .best-coff-p{
+    padding: 80px 0px;
+}
+.best-coff-se .coffee-box-flex{
+    display: flex;
+    gap: 20px;
+}
+.best-coff-se .coffee-box-flex .left-content{
+    flex: .5;
+}
+.best-coff-se .coffee-box-flex .left-content h5{
+    text-transform: uppercase;
+    color:gray;
+    padding-bottom: 10px;
+}
+.best-coff-se .coffee-box-flex .left-content h1{
+    text-transform: capitalize;
+    color: rgb(22, 22, 98);
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.best-coff-se .coffee-box-flex .left-content p{
+    color: grey;
+    line-height: 25px;
+    padding-bottom: 30px;
+}
+.best-coff-se .coffee-box-flex .left-content button{
+    height: 50px;
+    width: 150px;
+    background-color: #ce6d06;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-weight: 700;
+    transition: 1s all ease;
+}
+.best-coff-se .coffee-box-flex .left-content button:hover{
+    background-color: #5e3203;
+}
+.best-coff-se .coffee-box-flex .right-images{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.best-coff-se .coffee-box-flex .right-images img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: 0.5s all linear;
+}
+.best-coff-se .coffee-box-flex .right-images img:hover{
+    transform: translateY(-15px);
+}
+/* ==================== product ===================*/
+.product{
+    background-color: beige;
+}
+.product .product-p{
+    padding: 50px 0px;
+}
+.product .product-heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.product .product-heading h5{
+    color: gray;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.product .product-heading h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: rgb(22, 22, 98);;
+}
+.product .product-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.product .product-grid .grid-box{
+    background-color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+.product .product-grid .grid-box img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.product .product-grid .grid-box .grid-text{
+    padding: 30px 20px;
+}
+.product .product-grid .grid-box .grid-text a{
+    color: rgb(22, 22, 98);
+    transition: .5s all ease;
+}
+.product .product-grid .grid-box .grid-text a:hover{
+    color: #ce6d06;
+}
+.product .product-grid .grid-box .grid-text p {
+    padding: 10px 0px;
+    color: gray;
+
+}

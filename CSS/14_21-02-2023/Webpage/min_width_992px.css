@@ -1,0 +1,33 @@
+@media (min-width:992px) {
+    .container{
+        margin: 0px 30px;
+    }
+    /* ================= header ==================== */
+    header .navigations .logo{
+        flex: 0.5;
+    }
+    header .navigations .nav{
+        display: flex;
+    }
+    header .navigations .theme button{
+        display: none;
+    }
+   /* ============== HomeImage =============== */
+    .HomeImage .HomeText h1{
+        font-size: 50px;
+    }
+    .HomeImage .HomeText p{
+        width: 50%;
+    }
+    /* ==================== best coffee for you =============== */
+    .best-coff-se .coffee-box-flex{
+        flex-direction: row;
+    }
+
+      /* =================== product ================== */
+      .product .product-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    }
+}
