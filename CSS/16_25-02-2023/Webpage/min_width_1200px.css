@@ -1,0 +1,16 @@
+@media (min-width:1200px) {
+    .container{
+        margin: 0px 80px;
+    }
+    /* header value inherit from 992px */
+
+    /* homeImage section inherit from 992px */
+
+    /* best coffee for you sectopn inherit from 992px */
+
+    /* product section inherit from 992px */
+
+    /* services section inherit from 992px */
+
+    /* gallery section inherit from 992px */
+}
