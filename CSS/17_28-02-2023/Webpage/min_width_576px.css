@@ -1,0 +1,60 @@
+@media (min-width:576px) {
+    .container{
+        margin: 0px 30px;
+    }
+    /* ================= header ==================== */
+    header .navigations .logo{
+        flex: 1;
+    }
+    header .navigations .nav{
+    display: none;
+    }
+    header .navigations .theme button{
+        display: block;
+    }
+      /* ============== HomeImage =============== */
+      .HomeImage .Home-p{
+        padding: 150px 0px;
+    }
+    .HomeImage .HomeText h1{
+        font-size: 35px;
+    }
+    .HomeImage .HomeText p{
+        width: 100%;
+    }
+     /* ==================== best coffee for you =============== */
+     .best-coff-se .coffee-box-flex{
+        flex-direction: column;
+    }
+    .best-coff-se .coffee-box-flex .right-images{
+        grid-template-columns: repeat(2,1fr);
+    }
+      /* =================== product ================== */
+      .product .product-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+     /* ================= services ==================== */
+     .services .ser-flex{
+        display: flex;
+        flex-direction: column;
+    }
+    .services .ser-flex .right-ser-data .right-grid{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+      /* ==================== coffee gallery ================== */
+      .coffee-gallery .gallery-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+       /* =============== footer ===================== */
+       .footer .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
