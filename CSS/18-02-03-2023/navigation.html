@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ul{
+            list-style: none;
+        }
+        header{
+            background-color: rgb(1, 67, 70);
+        }
+        .container{
+            margin: 0px 80px;
+        }
+        header .header-p{
+            padding: 30px 0px;
+        }
+        header .header-flex{
+            display: flex;
+            align-items: center;
+        }
+        header .header-flex .logo{
+            flex: 1;
+        }
+        header .header-flex .logo h1{
+            font-size: 40px;
+            color: white;
+        }   
+        header .header-flex .nav{
+            flex: 3;
+            display: flex;
+            align-items: center; 
+            justify-content: space-around;
+        }
+        header .header-flex .nav ul{
+            display: flex;
+            gap: 30px;
+        }
+        header .header-flex .nav .search{
+            position: relative;
+        }
+        header .header-flex .nav .search span{
+            position: absolute;
+            top: 4px;
+            right: 4px;
+            background-color: magenta;
+            padding: 5px;
+            border-radius: 50%;
+            color: white;
+        }
+        header .header-flex .nav .search input{
+            height: 33px;
+            width: 180px;
+            border-radius: 40px;
+            border: none;
+            padding: 0px 5px;
+        }
+        header .header-flex .theme{
+            flex: 0.5;
+            display: flex;
+            align-items: center;
+            justify-content: end;
+            gap: 20px;
+        }
+        header .header-flex .theme{
+            font-size:25px;
+        }
+        header .header-flex .theme .btn button {
+            display: none;
+            height: 40px;
+            width: 40px;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 10px;
+
+        }
+        @media(max-width:576px){
+            .container{
+                margin: 0px 20px;
+            }
+            header .header-flex .nav{
+                display: none;
+            }
+            header .header-flex .theme .btn button {
+                display: block;
+            }
+        }
+        @media(min-width:576px){
+            .container{
+                margin: 0px 30px;
+            }
+            header .header-flex .nav{
+                display: none;
+            }
+            header .header-flex .theme .btn button {
+                display: block;
+            }
+        }
+        @media(min-width:768px){
+            /* inherit from 576px */
+        }
+        @media(min-width:992px){
+            .container{
+                margin: 0px 50px;
+            }
+            header .header-flex .nav{
+                display: flex;
+            }
+            header .header-flex .theme .btn button {
+                display: none;
+            }
+        }
+        @media(min-width:1200px){
+            .container{
+                margin: 0px 80px;
+            }
+        }
+        .head h1{
+            font-size: 50px;
+            position: relative;
+            
+        }
+        .head h1::before{
+            content: "";
+            transition: 1s all ease;
+        }
+        .head h1:hover::before{
+            height: 40px;
+            width: 40px;
+            background-color: red;
+            display: inline-block;
+            border-radius: 50px 1px 20px;
+            /* transform-origin: 0% 100%; */
+            transform: rotate(197deg);
+            position: absolute;
+            top: -4px;
+            left: -9px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-p">
+                <div class="header-flex">
+                    <div class="logo">
+                        <h1>Logo</h1>
+                    </div>
+                    <div class="nav">
+                        <div class="menu-nav">
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Service</a></li>
+                                <li><a href="">Pages</a>
+                                    <span class="fa-solid fa-angle-down"></span>
+                                </li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="search">
+                            <input type="text" name="" placeholder="Search">
+                            <span class="fa-solid fa-search"></span>
+                        </div>
+                    </div>
+                    <div class="theme">
+                        <div>
+                            <span class="fa-solid fa-moon"></span>
+                        </div>
+                        <div class="btn">
+                            <button><span class="fa-solid fa-bars"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="head">
+        <div class="container">
+        <h1>Hello world</h1>
+
+        </div>
+    </section>
+</body>
+</html>
