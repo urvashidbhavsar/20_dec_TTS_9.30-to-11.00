@@ -1,0 +1,10 @@
+Window Object :
+5 function / methods
+
+(1) alert()
+(2) confirm()
+(3) prompt()
+(4) open()
+(5) close()
+
+alert(), confirm() and prompt() also called as popup boxes.
