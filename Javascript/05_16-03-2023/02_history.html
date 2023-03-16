@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function go_fn(){
+            history.go(-2);
+        }
+        function back_fn(){
+            window.history.back()
+        }
+    </script>
+</head>
+<body>
+    
+    <!-- there are 3 functions in history 
+        go(), back(), forword()
+    -->
+
+    <button onclick="go_fn()">Go</button>
+    <button onclick="back_fn()">Back</button>
+</body>
+</html>

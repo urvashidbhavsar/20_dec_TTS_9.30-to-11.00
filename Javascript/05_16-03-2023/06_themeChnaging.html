@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        a{
+            text-decoration: none;
+            color: blue;
+        }
+        .dark-mode{
+            background-color: rgb(30, 30, 30);
+            color: white;
+        }
+        .dark-mode a{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="fa-solid fa-moon"></span>
+    </div>
+
+    <h1>Hello user</h1>
+    <h3><a href="">Go to next Page</a></h3>
+
+
+    <script>
+        // add() => add the value
+        // remove() => remove the value
+        // toggle() => add and remove both
+        // classList(property) => use the css class
+        // contains() => check the value is exist or not
+        let icon = document.querySelector(".fa-moon")
+        icon.addEventListener("click",function(){
+            document.body.classList.toggle("dark-mode")
+
+            if(document.body.classList.contains("dark-mode") == true){
+                icon.classList.remove("fa-moon")
+                icon.classList.add("fa-sun")
+            }else{
+                icon.classList.remove("fa-sun")
+                icon.classList.add("fa-moon")
+            }
+        })
+    </script>
+</body>
+</html>

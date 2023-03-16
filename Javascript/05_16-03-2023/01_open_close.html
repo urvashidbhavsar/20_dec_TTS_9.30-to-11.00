@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a = "https://www.youtube.com/";
+        var b;
+        function open_fn(){
+          b = window.open(a);
+        }
+        function close_fn(){
+          b.window.close();
+        }
+        function forword_fn(){
+          window.history.forward()
+        }
+    </script>
+</head>
+<body>
+    <!-- <a href=""></a> -->
+    <button onclick="return open_fn()">Open</button>
+    <button onclick="return close_fn()">close</button>
+    <button onclick="return forword_fn()">Forword</button>
+</body>
+</html>
