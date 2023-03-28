@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        Enter any Number :
+        <input type="text" name="" id="num1">
+        <span id="msg"></span>
+        <br>
+        <br>
+        <button onclick="return display_table()">Click Here</button>
+        <p id="p1"></p>
+    </form>
+    
+    <script>
+        // var no = 35;
+        // var num1 = 1;
+        // for(num1 = 1;num1 <= 10; num1++){
+        //     document.writeln(no + "*" + num1 + "="+no * num1 + "<br>")
+        // }
+
+        function display_table(){
+            var no = document.getElementById("num1").value;
+            if(no == ""){
+                document.getElementById("msg").innerText = "Enter no";
+                return false
+            }else{
+                var i = 1;
+                var res = "";
+                for(i=1; i<11; i++){
+                    res = res + "<p>" + no + "*" +  i + "=" + no*i + "</p>";
+                }
+                document.querySelector("#p1").innerHTML = res;
+                return false;
+            }
+        }
+
+
+    </script>
+</body>
+</html>
