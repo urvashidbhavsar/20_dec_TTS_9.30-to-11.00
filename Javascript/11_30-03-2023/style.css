@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    margin: 0px 70px;
+}
+/* ============ header =========== */
+header{
+    /* background-color: lightblue; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11111;
+    transition: 1s all ease;
+}
+.header-fixed{
+    background-color: lightblue;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11111;
+}
+header .header-padding{
+    padding: 20px 0px;
+}
+header .header-flex{
+    display: flex;
+    align-items: center;
+}
+header .header-flex .logo{
+    flex: 0.5;
+}
+header .header-flex .logo h1{
+    font-size: 40px;
+}
+header .header-flex .logo a{
+    color: blue;
+}
+header .header-flex .nav{
+    flex: 2;
+}
+header .header-flex .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .header-flex .nav ul a{
+    color: blue;
+    font-weight: 700;
+}
+header .header-flex .theme{
+    font-size: 22px;
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+}
+header .header-flex .theme button{
+    display: none;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    border: 2px solid blue;
+    background-color: transparent;
+    color: blue;
+    position: relative;
+}
+.homepage img{
+    height: 700px;
+    width: 100%;
+}
+/* randomly class create for toggle menu */
+header .header-flex .nav-change{
+    display: none;
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: darkcyan;
+}
+header .header-flex .nav-change ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header .header-flex .nav-change li::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    display: block;
+}
+
+/* ============ media query ================ */
+@media(max-width:576px){
+    .container{
+        margin: 0px 30px;
+    }
+    header .header-flex .nav{
+        display: none;
+    }
+    header .header-flex .theme button{
+        display: block;
+    }
+    header .header-flex .nav-change{
+        display: block;
+    }
+}
+@media(min-width:576px){
+    .container{
+        margin: 0px 30px;
+    }
+    header .header-flex .nav{
+        display: none;
+    }
+    header .header-flex .theme button{
+        display: block;
+    }
+    header .header-flex .nav-change{
+        display: block;
+    }
+}
+@media(min-width:992px){
+    .container{
+        margin: 0px 70px;
+    }
+    header .header-flex .nav{
+        display: block;
+    }
+    header .header-flex .theme button{
+        display: none;
+    }
+}
