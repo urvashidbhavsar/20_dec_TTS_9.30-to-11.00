@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            width: 60%;
+            border: 2px solid black;
+            margin: auto;
+            padding: 20px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+        }
+        .col-1{
+            flex: 1;
+            text-align: right;
+            padding: 5px;
+        }
+        .col-2{
+            flex: 2;
+            padding: 5px;
+        }
+        .col-3{
+            flex: 1;
+        }
+        input[type="text"],[type="date"],[type="password"],select{
+            height: 25px;
+            width: 300px;
+            padding: 0px 5px;
+            font-size: 17px;
+        }
+        label{
+            font-size: 17px;
+        }
+        input:focus-visible{
+            outline: none;
+        }
+        span{
+            color: red;
+        }
+    </style>
+    <script src="all_blank.js"></script>
+    <script src="reg_ex.js"></script>
+</head>
+<body>
+    <form action="#">
+    <h1>Register Here..</h1>
+    <!-- first name -->
+        <div class="row">
+            <div class="col-1">
+                <label for="">First Name</label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="fname" placeholder="First name" onkeyup="return reg_ex_name(this,'msg1')" onblur="return check_value(this,'msg1')">
+            </div>
+            <div class="col-3">
+                <span id="msg1"></span>
+            </div>
+        </div>
+      <!-- last name -->
+      <div class="row">
+        <div class="col-1">
+            <label for="">Last Name</label>
+        </div>
+        <div class="col-2">
+            <input type="text" id="lname" placeholder="Last name" onkeyup="return reg_ex_name(this,'msg2')" onblur="return check_value(this,'msg2')">
+        </div>
+        <div class="col-3">
+            <span id="msg2"></span>
+        </div>
+      </div>
+
+      <!-- radio button -->
+      <div class="row">
+        <div class="col-1">
+            <label for="">Gender</label>
+        </div>
+        <div class="col-2">
+           <input type="radio" name="gen" id="male" >
+           <label for="">Male</label>
+           <input type="radio" name="gen" id="female">
+           <label for="">Female</label>
+           <input type="radio" name="gen" id="other">
+           <label for="">Others</label>
+        </div>
+        <div class="col-3">
+            <span id="msg3"></span>
+        </div>
+      </div>
+
+      <!-- Date -->
+      <div class="row">
+        <div class="col-1">
+            <label for="">Date of Birth</label>
+        </div>
+        <div class="col-2">
+            <input type="date" id="dob" onblur="return check_value(this,'msg4')">
+        </div>
+        <div class="col-3">
+            <span id="msg4"></span>
+        </div>
+      </div>
+
+        <!-- address -->
+        <div class="row">
+            <div class="col-1">
+                <label for="">Address</label>
+            </div>
+            <div class="col-2">
+               <textarea name="" id="addr" cols="40" rows="3" placeholder="Address must have more than 20 letters" onblur="return check_value(this,'msg5')" onkeyup="return check_address_length()"></textarea>
+            </div>
+            <div class="col-3">
+                <span id="msg5"></span>
+            </div>
+          </div>
+
+          <!-- city -->
+          <div class="row">
+            <div class="col-1">
+                <label for="">city</label>
+            </div>
+            <div class="col-2">
+               <select name="" id="city" onblur="return check_value(this,'msg6')">
+                <option value="-1">--- select city ---</option>
+                <option value="">Surat</option>
+               </select>
+            </div>
+            <div class="col-3">
+                <span id="msg6"></span>
+            </div>
+          </div>
+    <!-- button -->
+    <div class="row">
+        <div class="col-1">
+        </div>
+        <div class="col-2">
+            <button type="submit" onclick="return form_blank_value()">Register</button>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
