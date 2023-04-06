@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // person is object
+        // firstname, lastname, Mobile_no and date of birth is property.
+        // right side of property we define its value
+        // key-pair value
+        const person = {
+            Firstname : "Rohit",
+            Lastname : "Patel",
+            Mobile_no : 954685746,
+            Date_of_birth : "30-01-2000"
+        }
+
+        console.log(person)
+        document.writeln(person.Firstname + " " + person.Lastname + " " + person.Mobile_no + " " + person.Date_of_birth + "<br>")
+
+        for (const p in person) {
+                // const element = person[p];                
+                console.log(person[p]);
+
+                document.write(person[p] + "<br>")
+        }
+
+    </script>
+</body>
+</html>

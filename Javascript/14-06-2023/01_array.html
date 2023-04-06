@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- array is collection of multiple dara or name of memory location -->
+    <p id="p1"></p>
+    <script>
+        let a = 10;
+        console.log(a)
+
+        let myarr = ["rohit","aman","richa","rehan",95487593];
+        console.log(myarr)
+       document.getElementById("p1").innerHTML = myarr
+
+        // for print an array
+        // for array print used for...of loop
+        for (const mya of myarr) {
+            console.log(mya)
+            document.write(mya + "<br>")
+        }
+        // console.log(mya)
+        myarr.pop()
+        console.log(myarr)
+
+        myarr.push("Sima");
+        console.log(myarr)
+    </script>
+</body>
+</html>

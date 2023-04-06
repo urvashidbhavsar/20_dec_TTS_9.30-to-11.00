@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn1">simple function</button>
+    <button id="btn2">arrow function</button>
+
+    <script>
+        // simple function
+        let btn1 = document.getElementById("btn1")
+        btn1.addEventListener("click",function(){
+            alert("Hello user");
+        })
+
+        // arrow function
+        // this used only addEventListner
+        let btn2 = document.getElementById("btn2")
+        btn2.addEventListener("click",() => {
+            alert("Hello user !!! ")
+        })
+
+    </script>
+
+</body>
+</html>
