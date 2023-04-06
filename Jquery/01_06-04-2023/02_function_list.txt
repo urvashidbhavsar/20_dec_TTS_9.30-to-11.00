@@ -1,0 +1,2 @@
+(1) display function :
+hide(), show(), toggle()
