@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- jquery cdn -->
+     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+     <style>
+        .div1{
+            margin: 5px;
+            display: none;
+            height: 100px;
+            width: 100px;
+            background-color: darkmagenta;
+        }
+        .div2{
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: darkblue;
+        }
+        .div3{
+            margin: 5px;
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+     </style>
+     <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").fadeIn(2000);
+            })
+            $("#btn2").click(function(){
+                $(".div1").fadeOut(2000)
+            })
+            $("#btn3").click(function(){
+                $(".div2").fadeToggle();
+            })
+            // to set opacity
+            $("#btn4").click(function(){
+                $(".div3").fadeTo(2000,0.5)
+            })
+        })
+     </script>
+</head>
+<body>
+    <!-- it is work on opacity -->
+    <button id="btn1">FadeIn</button>
+    <button id="btn2">FadeOut</button>
+    <button id="btn3">FadeToggle</button>
+    <button id="btn4">FadeTo</button>
+
+    <hr>
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+</html>

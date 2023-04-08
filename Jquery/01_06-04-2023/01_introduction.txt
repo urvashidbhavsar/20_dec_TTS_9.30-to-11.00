@@ -1,0 +1,18 @@
+jquery is a library of javascript.
+
+website : https://jquery.com/
+
+cdn => 
+(1) offline => offline package
+(2) online => google cdn, cdn.js, microsoft, jquery website
+
+version => 3.6.4
+
+syntax :
+    $(document).ready(function(){
+        $("selector").events(function(){
+            $("selector").jquery_function();
+        })
+    })
+
+    selector : id, class, element, universal, group 
