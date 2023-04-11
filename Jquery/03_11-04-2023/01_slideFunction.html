@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .div1{
+            height: 200px;
+            width: 200px;
+            background-color: cadetblue;
+        }
+        .div2{
+            height: 200px;
+            width: 300px;
+            background-color: darkblue;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $(".div1").slideUp(2000)
+            })
+
+            $("#btn2").click(function(){
+                $(".div1").slideDown(2000)
+            })
+
+            $("#btn3").click(function(){
+                $(".div2").slideToggle(2000);
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">slide Up</button>
+    <button id="btn2">slide Down</button>
+    <button id="btn3">Slide Toggle</button>
+
+    <hr>
+    <div class="div1"></div>
+    <hr>
+    <div class="div2"></div>
+</body>
+</html>
