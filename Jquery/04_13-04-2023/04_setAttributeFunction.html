@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- jquery cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p1").text("this is javascript function")
+            })
+            $("#btn2").click(function(){
+                $("#p1").html("<i><u>this is javascript function</u></i>")
+            })
+            $("#btn3").click(function(){
+                $("input").val("Hello user !!!!!!!")
+            })
+        })
+     </script>
+</head>
+<body>
+    <!-- to get or set attribute used 3 function 
+        html(), text() and val()
+    -->
+    <button id="btn1">text</button>
+    <button id="btn2">html</button>
+    <button id="btn3">value</button>
+
+    <p id="p1">this is jquery function</p>
+    <br>
+    <input type="text" name="" id="" value="Hello user">
+</body>
+</html>
