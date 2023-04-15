@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- jquery cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+     <style>
+        span{
+            color: red;
+        }
+     </style>
+     <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // let fname = document.getElementById("uname").value;
+                $fname = $("#uname").val();
+                if($fname == ""){
+                    $("#p1").html("<span>Enter name</span>")
+                    return false
+                }else{
+                    // document.getElementById("p1").innerText = fname;
+                    // $("#p1").text($fname);
+                    $("#p1").html("<b>" + $fname + "</b>")
+                    return false;
+                }
+            })
+        })
+     </script>
+</head>
+<body>
+    <form action="">
+        <label for="">Enter your name :</label>
+        <input type="text" name="" id="uname">
+
+        <button id="btn1">Click Here</button>
+
+        <br><br>
+    </form>
+    <p id="p1"></p>
+</body>
+</html>

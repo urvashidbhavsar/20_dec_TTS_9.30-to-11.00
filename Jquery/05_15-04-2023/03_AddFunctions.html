@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- jquery cdn -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <style>
+        /* .div1{
+            height: 2px;
+            width: 100px;
+            background-color: red;
+        } */
+      </style>
+      <script>
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $("h1").append("!!!");
+            })
+            $(".btn2").click(function(){
+                $("h1").prepend("!!!")
+            })
+            $(".btn3").click(function(){
+                $("b").before("!!!")
+            })
+            $(".btn4").click(function(){
+                $("b").after("!!!")
+            })
+        })
+      </script>
+</head>
+<body>
+    <!-- add functions => append(), prepand(), before(), after() -->
+    <button class="btn1">append</button>
+    <button class="btn2">prepand</button>
+    <button class="btn3">before</button>
+    <button class="btn4">after</button>
+
+    <hr>
+    <h1>Hello world</h1>
+    <b>Hello world</b>
+    <!-- <div id="div1"></div> -->
+</body>
+</html>

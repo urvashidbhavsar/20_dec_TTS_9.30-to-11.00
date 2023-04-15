@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        // height width work with content
+        // innerheight and innerwidth work with padding and content
+        // outerheight and outerwidth work with padding, border and content
+        // outerheight and outerwidth value is true show padding, border, margin and content
+        $(document).ready(function(){
+            $txt = ""
+            $txt = "Height :" + $(".div1").height() +
+                    "<br> width : " + $(".div1").width() +
+                    "<br> InnerHeight : " + $(".div1").innerHeight() +
+                    "<br> InnerWidth : " + $(".div1").innerWidth() + 
+                    "<br> OuterHeight  : " + $(".div1").outerHeight() +
+                    "<br> Outerwidth : " + $(".div1").outerWidth() +
+                    "<br> OuterHeight  : " + $(".div1").outerHeight(true) +
+                    "<br> Outerwidth : " + $(".div1").outerWidth(true) 
+                    ;
+
+            $(".div1").html($txt);
+            
+            $(".div2").height(200).width(200);
+        })
+    </script>
+    <style>
+        .div1{
+            height: 300px;
+            width: 400px;
+            border: 2px solid black;
+            padding :20px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+
+    <div class="div2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi omnis distinctio aspernatur temporibus magni adipisci dolore odio eligendi impedit iusto suscipit, eaque mollitia cum, minus fugiat in labore sed ea.
+    </div>
+</body>
+</html>
