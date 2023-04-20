@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $(".main").siblings(".main3").addClass("change")
+                // $(".main").next().addClass("change")
+                // $(".main").nextAll().addClass("change")
+                // $(".main").nextUntil(".main3").addClass("change")
+                // $(".main3").prev().addClass("change")
+                // $(".main3").prevAll().addClass("change")
+                $(".main3").prevUntil(".main").addClass("change")
+            })
+        })
+    </script>
+    <style>
+        div{
+            margin: 10px;
+            border: 2px solid gray;
+        }
+        h1{
+            margin: 10px;
+            border: 2px solid blue;
+        }
+        .change
+        {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <div class="mainall">
+        <div class="main">
+            <div class="sub">
+                <div class="sub-main">
+                    <h1>Hello user</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main1">
+            <div class="sub1">
+                <div class="sub-main1">
+                    <h1>Hello user</h1>
+                </div>
+            </div>
+        </div>
+        <div class="main2">
+            <h1>Hello user</h1>
+        </div>
+        <div class="main3">
+            <div class="sub1">
+                <h1>Main 3</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

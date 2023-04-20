@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <style>
+        div{
+            height: auto;
+            width: 400px;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .changeVal{
+            color: blue;
+            font-size: 18px;
+            background-color: lightcoral;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("div").filter(".div3").addClass("changeVal");
+                // $("div").first().addClass("changeVal");
+                // $("div").last().addClass("changeVal");
+                // $("div").eq(3).addClass("changeVal") => pass index number
+                $("div").not(".div2").addClass("changeVal")
+            })
+        })
+    </script>
+</head>
+<body>
+    <button id="btn1">Filter Value</button>
+    <hr>
+    <div class="div1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima tempore saepe rerum suscipit laboriosam nemo eligendi magnam beatae. Obcaecati hic soluta temporibus dolores quo quidem asperiores vel, vitae necessitatibus accusantium.
+    </div>
+    <div class="div2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum, quod aliquam tenetur quis dolores cum quaerat aliquid esse, cumque odit voluptatum minima voluptatem asperiores. Alias placeat nam ipsam in ea.
+    </div>
+    <div class="div3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime iusto totam exercitationem quia saepe asperiores est tempore facilis quidem repellendus corporis rerum impedit facere obcaecati eum, maiores porro, eos sequi!
+    </div>
+    <div class="div4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore at vel fugit voluptate ipsam cupiditate neque eius voluptatem rem. Voluptate molestiae ipsum est, vero nostrum eaque aperiam impedit fuga.
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                // $("h1").parent().addClass("change"); => single
+                // $("h1").parents().addClass("change"); => all
+                // = until which you
+                $("h1").parentsUntil(".mainall").addClass("change");
+            })
+        })
+    </script>
+    <style>
+        div{
+            margin: 10px;
+            border: 2px solid gray;
+        }
+        h1{
+            margin: 10px;
+            border: 2px solid blue;
+        }
+        .change
+        {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <!-- traversing means move throught 
+        ancestor => parent(), parents(), parentUntil()
+    -->
+    <button id="btn1">Click Here</button>
+    <hr>
+    <div class="mainall">
+    <div class="main">
+        <div class="sub">
+            <div class="sub-main">
+                <h1>Hello user</h1>
+            </div>
+        </div>
+    </div>
+    <div class="main1">
+        <div class="sub1">
+            <div class="sub-main1">
+                <h1>Hello user</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
