@@ -1,0 +1,7 @@
+    css                             bootstrap
+max-width:576px                      xs = extra small (auto)
+min-width:576px                      sm = small
+min-width:768px                      md = medium 
+min-width:992px                      lg = large 
+min-width:1200px                     xl = extra large 
+min-width:1400px                     xxl = extra extra large
