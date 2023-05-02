@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <style>
+        body{
+            background: linear-gradient(pink, lightblue,pink);
+        }
+        h1{
+            color: #0d0d21;
+            font-weight: 400;
+        }
+        .reg_fields{
+            display: flex;
+            align-items: center;
+        }
+        input[type="text"],[type="date"],textarea,select,[type="password"],.input-group-text{
+            border-bottom: 1px solid black !important;
+            border-radius: 0 !important;
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-right: 0 !important;
+            background-color: transparent !important;
+        }
+        input[type="text"]:focus,[type="date"]:focus,textarea:focus,select:focus,[type=password]:focus{
+            box-shadow: none !important;
+            border-bottom: 1px solid black !important;
+            background-color: transparent !important;
+        }
+        input[type="radio"]{
+            border: 1px solid black;
+        }
+        @media (max-width:576px){
+            .reg_fields{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        for label => form-label
+        for input type and textarea = text,date => form-control
+        for input type = radio & checkbox => form-check-input
+            for radio button & checkbox horizontally => form-check-inline
+            vertical => form-check
+            form radio button and checkbox label => form-check-label
+
+        for email => used addons => after textbox add label, button or any
+     -->
+    <div class="container">
+        <h1 class="">Registration page</h1>
+        <div class="regpage">
+            <form action="">
+                <!-- input type = text -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="fname" class="form-label">Name</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                        <input type="text" name="" id="fname" class="form-control">
+                    </div>
+                </div>
+                <!-- input type = radio  -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="" class="form-label">Gender</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                        <div class="form-check-inline">
+                            <input type="radio" name="gen" id="gen1" class="form-check-input">
+                            <label for="gen1">Male</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="radio" name="gen" id="" class="form-check-input">
+                            <label for="">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- input type = date -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="doj" class="form-label">Date Of Join</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                        <input type="date" name="" id="doj" class="form-control">
+                    </div>
+                </div>
+                <!-- textarea -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="address" class="form-label">Address</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                       <textarea name="" id="address" cols="30" rows="3" class="form-control"></textarea>
+                    </div>
+                </div>
+                <!-- city -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="city" class="form-label">city</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                      <select name="" id="" class="form-select">
+                        <option value="">---select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Navsari</option>
+                      </select>
+                    </div>
+                </div>
+                <!-- experiance -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="exp" class="form-label">Experiance</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                        <div class="form-check-inline">
+                            <input type="checkbox" name="" id="" class="form-check-input">
+                            <label for="" class="form-check-label">1 Year</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" name="" id="" class="form-check-input">
+                            <label for="" class="form-check-label">2 Year</label>
+                        </div>
+                        <div class="form-check-inline">
+                            <input type="checkbox" name="" id="" class="form-check-input">
+                            <label for="" class="form-check-label">3 Year</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- email id -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="email" class="form-label">Email</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                        <div class="input-group">
+                            <input type="text" name="" id="email" class="form-control">
+                            <label for="" class="input-group-text">@gmail.com</label>
+                            <!-- <button class="btn btn-primary input-group-text">Submit</button> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- password -->
+                <div class="row py-2 reg_fields">
+                    <div class="col-lg-2 col-md-2 col-sm-2 col-auto">
+                        <label for="pass" class="form-label">password</label>
+                    </div>
+                    <div class="col-lg-10 col-md-10 col-sm-12 col-auto">
+                       <input type="password" class="form-control">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
