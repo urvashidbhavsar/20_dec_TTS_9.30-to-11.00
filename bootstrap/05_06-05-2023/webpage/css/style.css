@@ -1,0 +1,201 @@
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ysabeau&display=swap');
+/* =========== common css ============ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Josefin Sans";
+}
+/* ============= navigation header ======= */
+header{
+  box-shadow: 0px 0px 5px 0px gray;
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+header .navbar-nav{
+    justify-content: end !important;
+    width: 100%;
+}
+header .navbar-nav a{
+    color: black;
+    font-weight: 700 !important;
+}
+header .navbar-brand{
+    color: white !important;
+    font-weight: 700;
+}
+header .navbar-nav a.active{
+    color: #0c420c !important;
+}
+header .navbar-nav a:hover{
+    color: #0c420c !important;
+}
+/* ========= homepage swiper css ========= */
+.homepage .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.homepage .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+  }
+  .homepage .slider1{
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider2{
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider3{
+    background-image: url(../images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider4{
+    background-image: url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider1::after,.slider2::after, .slider3::after, .slider4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  .homepage .swiper-scrollbar{
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.533);
+    margin-bottom: 10px;
+  }
+  .homepage .swiper-scrollbar-drag{
+    background-color: white;
+  }
+
+  /* =========== farming grid ============ */
+  .farming-grid .farming{
+    position: relative;
+  }
+  .farming-grid .farming .farming-t{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0c420cbc;
+    display: grid;
+    place-content: center;
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s ease all;
+  }
+  .farming-grid .farming:hover .farming-t{
+    height: 100%;
+  }
+  .farming-grid .farming .innertext{
+    transition: 0.5s all ease;
+    transform: scaleY(0);
+    /* visibility: hidden; */
+  }
+  .farming-grid .farming:hover .innertext{
+    height: 100%;
+    /* visibility: visible; */
+    transform: scaleY(1);
+  }
+  .farming-grid .farming-b-t a{
+    color: black !important;
+    font-weight: 700;
+  }
+  .farming-grid .farming-b-t a:hover{
+    color:#0c420c !important;
+  }
+  /* ========== about-farming ============*/
+  .about-farming{
+    background-color: #f2fbf2;
+  }
+  .about-farming h6{
+    color: #0c420c;
+  }
+  .about-farming .about-farm-tab{
+    display: flex;
+    gap: 10px;
+  }
+  .about-farming .list-group-item{
+    color: black !important;
+    background-color: transparent;
+    border-left:0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    font-weight: 700;
+  }
+  .about-farming .list-group-item.active{
+    border-bottom: 2px solid green !important;
+    border-top: 0 !important;
+    color: #0c420c !important;
+  }
+  .about-farming .link{
+    width: 100px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0c420c;
+  }
+  .about-farming .link a{
+    text-transform: capitalize;
+    color: black !important;
+    font-weight: 700;
+  }
+  .about-farming .link a:hover{
+    color: #0c420c !important;
+  }
+
+
+
+
+
+  /* ============ media Query ========== */
+  @media (max-width:576px) {
+  }
+  @media (min-width:576px) {
+
+  }
+  @media (min-width:768px) {
+    .farming-grid .f-grid{
+      width: 350px;
+    }
+  }
+  @media (min-width:992px) {
+  }
