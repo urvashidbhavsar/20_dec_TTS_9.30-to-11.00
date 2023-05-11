@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ysabeau&display=swap');
+/* =========== common css ============ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ysabeau",sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-family: "Josefin Sans";
+}
+p{
+  margin: 0;
+}
+/* ============= navigation header ======= */
+header{
+  box-shadow: 0px 0px 5px 0px gray;
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.header-fixed{
+  background-color: #0c420cbd;
+  box-shadow: 0px 0px 5px 0px gray;
+  position: fixed;
+  z-index: 1111;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+header .navbar-nav{
+    justify-content: end !important;
+    width: 100%;
+}
+header .navbar-nav a{
+    color: black;
+    font-weight: 700 !important;
+}
+header .navbar-brand{
+    color: white !important;
+    font-weight: 700;
+}
+header .navbar-nav a.active{
+    color: #020e02 !important;
+}
+header .navbar-nav a:hover{
+    color: #0c420c !important;
+}
+/* ========= homepage swiper css ========= */
+.homepage .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+.homepage .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+  }
+  .homepage .slider1{
+    background-image: url(../images/banner1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider2{
+    background-image: url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider3{
+    background-image: url(../images/banner3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider4{
+    background-image: url(../images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    z-index: 1;
+    padding-top: 100px;
+  }
+  .homepage .slider1::after,.slider2::after, .slider3::after, .slider4::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+  }
+  .homepage .swiper-scrollbar{
+    opacity: 1 !important;
+    background-color: rgba(255, 255, 255, 0.533);
+    margin-bottom: 10px;
+  }
+  .homepage .swiper-scrollbar-drag{
+    background-color: white;
+  }
+
+  /* =========== farming grid ============ */
+  .farming-grid .farming{
+    position: relative;
+  }
+  .farming-grid .farming .farming-t{
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0c420cbc;
+    display: grid;
+    place-content: center;
+    height: 0%;
+    width: 100%;
+    overflow: hidden;
+    transition: 1s ease all;
+  }
+  .farming-grid .farming:hover .farming-t{
+    height: 100%;
+  }
+  .farming-grid .farming .innertext{
+    transition: 0.5s all ease;
+    transform: scaleY(0);
+    /* visibility: hidden; */
+  }
+  .farming-grid .farming:hover .innertext{
+    height: 100%;
+    /* visibility: visible; */
+    transform: scaleY(1);
+  }
+  .farming-grid .farming-b-t a{
+    color: black !important;
+    font-weight: 700;
+  }
+  .farming-grid .farming-b-t a:hover{
+    color:#0c420c !important;
+  }
+  /* ========== about-farming ============*/
+  .about-farming{
+    background-color: #f2fbf2;
+  }
+  .about-farming h6{
+    color: #0c420c;
+  }
+  .about-farming .about-farm-tab{
+    display: flex;
+    gap: 10px;
+  }
+  .about-farming .list-group-item{
+    color: black !important;
+    background-color: transparent;
+    border-left:0 !important;
+    border-right: 0 !important;
+    border-bottom: 0 !important;
+    border-top: 0 !important;
+    font-weight: 700;
+  }
+  .about-farming .list-group-item.active{
+    border-bottom: 2px solid green !important;
+    border-top: 0 !important;
+    color: #0c420c !important;
+  }
+  .about-farming .link{
+    width: 100px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0c420c;
+  }
+  .about-farming .link a{
+    text-transform: capitalize;
+    color: black !important;
+    font-weight: 700;
+  }
+  .about-farming .link a:hover{
+    color: #0c420c !important;
+  }
+  /* =============== ask-ur-self ============== */
+  .ask-ur-self h5{
+    color: #0c420c;
+    font-weight: 700;
+  }
+  .ask-ur-self .about-self{
+    padding: 10px;
+  }
+  .ask-ur-self .about-self .icon{
+    height: 85px;
+    width: 85px;
+    border: 2px solid #0c420c;
+    color: #0c420c;
+    display: grid;
+    place-content: center;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .ask-ur-self .about-self h4 a{
+    color: #222121;
+    font-weight: bold;
+  }
+  .ask-ur-self .about-self h4 a:hover{
+    color: #0c420c;
+  }
+  .ask-ur-self .about-self:hover .icon{
+    background-color: #0c420c;
+    color: white;
+  }
+
+  /* ========== request form ========== */
+  .request-form{
+    background-image: url(../images/banner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .request-form::after{
+    content: "";
+    position: absolute;
+    top:0; 
+    left :0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.639);
+    z-index: -1;
+  }
+  .request-form-input{
+    background-color: white;
+    padding: 60px;
+  }
+  .request-form-input h5{
+    color: #0c420c;
+  }
+  .request-form .user-input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 40px;
+  }
+  .request-form .user-input:focus{
+    box-shadow: none;
+    border: 2px solid #0c420c;
+  }
+  .request-form button{
+    height: 50px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    background-color: #0c420c;
+    color: white;
+  }
+  .request-form button:hover{
+    background-color: #5c5a5a;
+  }
+  /* ============== blog post ========= */
+  .blog-post i{
+    color: #0bdf0b;
+    font-weight: 700;
+  }
+  /* ============ status ============== */
+  .status{
+    background-image: url(../images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+  }
+  .status::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.645);
+    z-index: -1;
+  }
+  .status .right-text{
+    background-color:#f2fbf2;
+    padding: 80px 0px;
+  }
+  .status .icon span{
+    font-size: 30px;
+    color: #0c420c;
+  }
+  .status .text h3{
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .status .text p{
+    padding-bottom: 30px;
+    color: gray;
+  }
+  .status h1{
+    font-size: 50px;
+  }
+/* ======== pricing info section =========== */
+.pricing-info .title{
+  color: #0c420c;
+  font-weight: 700;
+}
+.pricing-info .pricing-flex-box{
+  display: flex;
+  justify-content: center;
+  gap:11px;
+}
+.pricing-info .pricing-flex-box .pricing-inner-flex{
+  border: 1px solid gray;
+  padding: 70px 50px;
+}
+.pricing-info .pricing-flex-box .p-text{
+  background-color: #57e657;
+  padding: 10px;
+  text-align: center;
+}
+.pricing-info .pricing-flex-box .p-text.active{
+  background-color: #0c420c;
+  color: white;
+}
+.pricing-info .pricing-flex-box .p-title{
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.pricing-info .pricing-flex-box .amt{
+  font-size: 50px;
+  font-weight: bold;
+}
+.pricing-info .pricing-flex-box sup{
+  font-size: 30px;
+}
+.pricing-info .pricing-flex-box sub{
+  font-size: 15px;
+  color: gray;
+}
+.pricing-info .pricing-flex-box ul{
+  line-height: 32px;
+}
+.pricing-info .pricing-flex-box li span{
+  padding-right: 10px;
+}
+.pricing-info .pricing-flex-box .signin{
+  height: 40px;
+  width: 100%;
+  background-color: #222121;
+  color: white;
+  border: none;
+}
+.pricing-info .pricing-flex-box .flex-scale{
+  position: relative;
+  transform: scale(1.1);
+}
+.pricing-info .pricing-flex-box .flex-scale h5{
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  /* text-align: center; */
+}
+
+
+
+
+
+  /* ============ media Query ========== */
+  @media (max-width:576px) {
+    .status h1{
+      font-size: 30px;
+    }
+    .status{
+      background-size: 100%;
+      background-position: unset;
+    }
+  }
+  @media (min-width:576px) {
+    .status h1{
+      font-size: 50px;
+    }
+    .status{
+      background-size: 100%;
+      background-position: unset;
+    }
+  }
+  @media (min-width:768px) {
+    .farming-grid .f-grid{
+      width: 350px;
+    }
+    .status{
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  @media (min-width:992px) {
+  }
