@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit";
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ======== header nav ========= */
+.header{
+    background-color: #28282d;
+}
+.header .left-nav ul{
+    display: flex;
+    gap: 25px;
+}
+.header .right-nav ul{
+    display: flex;
+    gap: 25px;
+}
+/* =======homepage===== */
+.homepage{
+    background-image: url(image/homebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #28282df2;
+    z-index: -1;
+}
+/* .homepage .aniImage{
+    animation: rotateImage 2s linear infinite;
+}
+@keyframes rotateImage {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+.homepage h1{
+    color: #e58f00;
+    text-transform: capitalize;
+    font-size: 65px;
+}
+.homepage p{
+    color: white;
+    font-size: 25px;
+}
+.homepage button{
+    height: 50px;
+    width: 120px;
+    background-color: #e58f00;
+    color: #28282d;
+    border-radius: 5px;
+    border: 2px solid #e58f00;
+}
+/* ==== about us ====== */
+.aboutus{
+    background-color: #1d1d23;
+}
+.aboutus h1{
+    font-size: 50px;
+    color: white;
+}
+.aboutus p{
+    font-size: 25px;
+    color: white;
+}
+/* ====== food section ====== */
+.foodSec{
+    background-color: #1d1d23;
+    position: relative;
+}
+.foodSec .ShapeImage{
+    background-image: url(image/shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 1500px; */
+}
+.foodSec .rightImage{
+    position: absolute;
+    top: -124px;
+    right: 0;
+}
+.foodSec .imageMove{
+    position: absolute;
+    right: -12px;
+    top: 643px;
+}
+.foodSec .firstImage{
+    padding-top: 120px;
+}
+.foodSec .FoodText{
+    padding: 135px;
+}
+.foodSec .FoodText h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+.foodSec .FoodText p{
+    line-height: 40px;
+    font-size: 28px;
+    color: white;
+}
+/* ========= gallary ======== */
+.gallary{
+    background-color: #1d1d23;
+}
+.gallary h1{
+    font-size: 50px;
+}
+
+/* ============Enjoy Food========== */
+.EnjoyFood{
+    background-image: url(image/foodimage.png);
+    background-position: center;
+    background-size: cover;
+}
+.EnjoyFood .OurFood{
+    height: auto;
+    width: 400px;
+    border: 5px solid #e58f00;
+    background-color: #1d1d23b5;
+    color: white;
+    padding: 50px;
+}
+/* ========= menu ============ */
+.Menu{
+    background-color: #1d1d23;
+}
+.Menu .text{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Menu .text h3{
+    color: #e58f00;
+}
+.Menu .text p {
+    color: white;
+}
+.Menu .text h5{
+    color: #e58f00;
+}
+/* ====== our meal ======= */
+.OurMeal{
+    background-color: #e58f00;
+    position: relative;
+}
+.OurMeal .MealImage{
+    position: absolute;
+    top: -40px;
+    height: 500px;
+    width: 500px;
+}
+.OurMeal h1{
+    font-size: 40px;
+    color: white;
+}
+.OurMeal p{
+    line-height: 30px;
+    color: white;
+}
+/* ========== footer ====== */
+.footer{
+    background-color: #28282d;
+}
+.footer .footerlogo{
+    height: 80px;
+    width: 250px;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.footer ul a{
+    color: white;
+    text-transform: uppercase;
+}
+.footer .social{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.footer .social .icons{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+@media (max-width:576px) {
+    .foodSec .rightImage{
+        /* position: absolute;
+        top: -124px;
+        right: 0; */
+        height: 280px;
+        width: 30%;
+    }
+    .foodSec .FoodText{
+        padding: 40px;
+    }
+    .foodSec .imageMove{
+        top: 500px; 
+    }
+    .foodSec .firstImage{
+        padding: 0;
+    }
+}
+@media (min-width:768px) {
+    .Menu .resMenu{
+        width: 50% !important;
+    }
+}
+@media (min-width:992px) {
+    .Menu .resMenu {
+        width: 100% !important;
+    }
+}

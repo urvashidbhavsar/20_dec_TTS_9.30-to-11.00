@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit";
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/* ======== header nav ========= */
+.header{
+    background-color: #28282d;
+}
+.header .left-nav ul{
+    display: flex;
+    gap: 25px;
+}
+.header .right-nav ul{
+    display: flex;
+    gap: 25px;
+}
+/* =======homepage===== */
+.homepage{
+    background-image: url(image/homebg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #28282df2;
+    z-index: -1;
+}
+/* .homepage .aniImage{
+    animation: rotateImage 2s linear infinite;
+}
+@keyframes rotateImage {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+.homepage h1{
+    color: #e58f00;
+    text-transform: capitalize;
+    font-size: 65px;
+}
+.homepage p{
+    color: white;
+    font-size: 25px;
+}
+.homepage button{
+    height: 50px;
+    width: 120px;
+    background-color: #e58f00;
+    color: #28282d;
+    border-radius: 5px;
+    border: 2px solid #e58f00;
+}
+/* ==== about us ====== */
+.aboutus{
+    background-color: #1d1d23;
+}
+.aboutus h1{
+    font-size: 50px;
+    color: white;
+}
+.aboutus p{
+    font-size: 25px;
+    color: white;
+}
+/* ====== food section ====== */
+.foodSec{
+    background-color: #1d1d23;
+    position: relative;
+}
+.foodSec .ShapeImage{
+    background-image: url(image/shape.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+.foodSec .rightImage{
+    position: absolute;
+    top: -124px;
+    right: 0;
+}
